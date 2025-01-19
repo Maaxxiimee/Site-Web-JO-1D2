@@ -3176,10 +3176,7 @@ footer section:nth-of-type(1) img {
         padding: 20px;
     }
 
-    .intro article {
-        width: 90%;
-        padding: 2em;
-    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -3189,14 +3186,7 @@ footer section:nth-of-type(1) img {
     .mainfel h2{
         font-size: 48px;
     }
-    .intro{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .classement{
-        margin-left: -200px;
-        margin-top: 5em;
-    }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -3209,13 +3199,7 @@ footer section:nth-of-type(1) img {
     .mainfel h3{
         font-size: 30px;
     }
-    .intro{
-        justify-content: flex-end;
-        flex-wrap: nowrap;
-    }
-    .classement{
-        flex-wrap: nowrap;
-    }
+
 } 
 
 @media screen and (max-width: 576px) {
