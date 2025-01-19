@@ -2921,3 +2921,361 @@ footer section:nth-of-type(1) img {
     }
 }
 /* YANN fin page épreuves *
+
+/*Pierre-Louis déput page sportif*/
+
+
+.biographie_disc{
+    display: flex;
+    flex-direction: column;
+}
+
+.biographie_disc article{
+    display: flex;  
+    margin: 5em 0;
+    font-family: 'Lexend', sans-serif;
+}
+    
+.biographie_disc article:nth-child(2n){
+    justify-content: flex-end;
+}
+
+.biographie_disc article:nth-child(2n - 1){
+    justify-content: flex-start;
+}
+
+.biographie_disc article h2{
+    background-color: #D6C075;
+    font-weight: bold;
+    padding: 0.8em 0;
+    text-align: center;
+    /* width: 60%; */
+    margin-top: 1em;
+    text-wrap: nowrap;
+    /* font-size: 64px; */
+    font-family: 'Lexend', sans-serif;
+}
+
+.biographie_disc article:nth-child(2n - 1) h2{
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+}
+
+.biographie_disc article:nth-child(2n) h2{
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+
+
+.biographie_disc img{ 
+    width: 600px;
+    height: 470px;
+    background-color: #223363;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5em;
+    margin-left: 7em;
+    margin-right: 5em;
+    margin-bottom: 6em;
+}
+
+.biographie_disc p{
+    display: flex;
+    color: #D6C075;
+    background-color: #212F5E;
+    align-items: center;
+    width: 500px;
+    height: 950px;
+    padding: 1em;
+    z-index: 3; 
+    font-size: 36px;
+        
+}
+
+.biographie_disc article:nth-child(2n) p{
+    box-shadow: -40px 46px 1px 1px rgba(28, 39, 71, 0.25), 
+    -40px 46px 2px 2px rgba(28, 39, 71,0.20), 
+    -40px 46px 4px 4px rgba(28, 39, 71,0.15), 
+    -40px 46px 8px 8px rgba(28, 39, 71,0.10),
+    -40px 46px 16px 16px rgba(28, 39, 71,0.05),
+    -40px 46px 1px 1px rgba(28, 39, 71, 0.25), 
+    -40px 46px 2px 2px rgba(28, 39, 71,0.20), 
+    -40px 46px 4px 4px rgba(28, 39, 71,0.15), 
+    -40px 46px 8px 8px rgba(28, 39, 71,0.10),
+    -40px 46px 16px 16px rgba(28, 39, 71,0.05),
+    -40px 46px 1px 1px rgba(28, 39, 71, 0.25); 
+}
+
+.biographie_disc article:nth-child(2n - 1) p{
+    box-shadow: 40px 46px 1px 1px rgba(28, 39, 71, 0.25), 
+    40px 46px 2px 2px rgba(28, 39, 71,0.20), 
+    40px 46px 4px 4px rgba(28, 39, 71,0.15), 
+    40px 46px 8px 8px rgba(28, 39, 71,0.10),
+    40px 46px 16px 16px rgba(28, 39, 71,0.05),
+    40px 46px 1px 1px rgba(28, 39, 71, 0.25), 
+    40px 46px 2px 2px rgba(28, 39, 71,0.20), 
+    40px 46px 4px 4px rgba(28, 39, 71,0.15), 
+    40px 46px 8px 8px rgba(28, 39, 71,0.10),
+    40px 46px 16px 16px rgba(28, 39, 71,0.05),
+    40px 46px 1px 1px rgba(28, 39, 71, 0.25); 
+}
+
+.tableau table tbody img{
+    width: 50px;
+    height: 33px;
+    text-align: center;
+}
+
+.imgtabl{
+    width: 50px;
+    height: 33px;
+}
+
+.vidfel {
+    background-color: #212F5E;
+    align-items: center;
+    display:inline-flex;
+    width: 1050px;
+    height: 400px;
+    padding: 1em;
+    z-index: 3; 
+    font-size: 36px;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 5em;
+    margin-bottom: 1.5em;
+    font-family: 'Lexend', sans-serif;
+}
+.vidfel p{
+    width: 600px;
+    color: #D6C075;
+    font-family: 'Lexend', sans-serif;
+}
+
+.vidfel iframe{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+
+
+}
+
+.titrefel_1_disc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#F2ABCB;
+    background-color:#1C2747;
+    border-top: 15px solid #D6C075;
+    border-bottom: 15px solid #D6C075;
+}
+
+.felhead {
+    background-image: url("images/fond_head.jpeg"); /* Remplacez avec le chemin vers la nouvelle image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Mise à jour pour le titre */
+.felhead aside {
+    background-color: rgba(0, 0, 0, 0.747); /* Cadre semi-transparent */
+    padding: 50px;
+    border-radius: 10px;
+    width: auto;
+    max-width: 50%;
+    text-align: center;
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.541);
+    position: absolute;
+    right: 35em;
+    top: 5em;
+}
+
+.felhead aside h1 {
+    color: #D6C075; /* Couleur texte */
+   
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Image de Félix Le Brun */
+.felhead2{
+    width: 500px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    border-radius: 15px;
+    position:absolute;
+    bottom: 0;
+    right: 20em;
+}
+
+
+.titrefel_1_disc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#F2ABCB;
+    background-color:#1C2747;
+    border-top: 15px solid #D6C075;
+    border-bottom: 15px solid #D6C075;
+}
+
+.mainfel{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainfel h2{
+    font-size: 64px;
+}
+
+.mainfel h1{
+    color: #D6C075;
+    font-weight: bold;
+    font-size: 128px;
+    font-family: 'Lexend', sans-serif;
+}
+.mainfel h3{
+    font-size: 40px;
+}
+.mainfel p{
+    font-size: 32px;
+
+}
+
+@media screen and (max-width: 576px) {
+    .mainfel {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .videl{
+        width: 100%;
+        padding: 1em;
+    }
+
+    .vidfel iframe {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .mainfel {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .intro article {
+        width: 90%;
+        padding: 2em;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .mainfel p{
+        font-size: 20px;
+    }
+    .mainfel h2{
+        font-size: 48px;
+    }
+    .intro{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .classement{
+        margin-left: -200px;
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .mainfel p{
+        font-size: 30px;
+    }
+    .mainfel h2{
+        font-size: 50px;
+    }
+    .mainfel h3{
+        font-size: 30px;
+    }
+    .intro{
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    .classement{
+        flex-wrap: nowrap;
+    }
+} 
+
+@media screen and (max-width: 576px) {
+    /* Ajustement des marges et tailles */
+    .mainfel {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    /* Barre de navigation */
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Images et sections */
+    .felhead img {
+        width: 100%;
+        height: auto;
+    }
+
+    .biographie_disc h2 {
+        font-size: 1.5rem;
+    }
+
+    .biographie_disc p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Vidéos */
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer section {
+        padding: 5px;
+    }
+}
+
+/* Pierr-Louis fin page sportif */
