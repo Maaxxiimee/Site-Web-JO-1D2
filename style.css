@@ -155,16 +155,16 @@
 .acceuil main .presentation div:nth-of-type(2) {
     flex-direction: row-reverse;
 }
-.acceuil main section table thead {
+main section table thead {
     background-color: #1C2747;
 }
-.acceuil main section table tbody tr:nth-child(2n) {
+main section table tbody tr:nth-child(2n) {
     background: #1C2747;
 }
-.acceuil main section table tbody tr:nth-child(2n-1) {
+main section table tbody tr:nth-child(2n-1) {
     background: #4360C0;
 }
-.acceuil main section table {
+main section table {
     margin: 50px;
     margin: auto;
     box-shadow: rgba(131, 131, 131, 0.719) -20px 20px;
@@ -172,7 +172,7 @@
     border-collapse: collapse;
     text-align: left;
 }
-.acceuil main section table td, .acceuil th {
+main section table td, th {
     font-weight: 800;
     color: #D6C075;
     padding: 20px;
