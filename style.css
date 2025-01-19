@@ -118,7 +118,7 @@
     justify-content: center;
     margin-top: 30px;
 }
-.acceuil main section h1{
+.acceuil main section h1, h1{
     color: black;
     margin: 40px;
     padding: 10px;
@@ -129,7 +129,7 @@
     font-size: 2.5em;
 }
 
-h1{
+.discipline h1{
     font-family: 'Montserrat';
     font-weight: 900;
 }
