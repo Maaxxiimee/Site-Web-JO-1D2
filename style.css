@@ -118,7 +118,7 @@
     justify-content: center;
     margin-top: 30px;
 }
-.acceuil main section h1{
+.acceuil main section h1, h1 {
     color: black;
     margin: 40px;
     padding: 10px;
@@ -128,13 +128,6 @@
     font-weight: 900;
     font-size: 2.5em;
 }
-
-h1{
-    font-family: 'Montserrat';
-    font-weight: 900;
-}
-
-
 .acceuil main .presentation p {
     margin: 30px;
     background: linear-gradient(#212F5E, #1C2747);
@@ -179,7 +172,7 @@ h1{
     border-collapse: collapse;
     text-align: left;
 }
-.acceuil main section table td, .acceuil th {
+.acceuil main section table td, th {
     font-weight: 800;
     color: #D6C075;
     padding: 20px;
@@ -690,7 +683,7 @@ footer section:nth-of-type(1) img {
     .acceuil main {
         margin-top: -150px;
     }
-    .acceuil main section table td, .acceuil th {
+    .acceuil main section table td, th {
         padding: 10px;
         margin: 0;
         font-weight: 600;
@@ -786,12 +779,7 @@ footer section:nth-of-type(1) img {
 /* ----------------------- */
 
 
-/* ----------------------- */
-/*         Nathan          */
-/* ----------------------- */
-
-
-body {
+.discipline {
     margin: 0;
     padding: 0;
     background-color: white;
@@ -799,12 +787,20 @@ body {
     font-family: 'Lexend', sans-serif;
     text-align: justify;
     overflow-x: hidden;
-    
 }
 
-main{
+.discipline main{
     display: flex;
     flex-direction: column;
+}
+.discipline 
+h1,
+.discipline h2,
+.discipline h3,
+.discipline h4,
+.discipline h5,
+.discipline h6{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .discipline h1{
@@ -821,76 +817,6 @@ main{
 .discipline p{
     font-size: 32px;
 }
-/*
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-} */
-
-
-/* navbar */
-
-.navbar {
-    background-color: #223363;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0; /* Start at the top of the screen */
-    z-index: 1000;
-    transition: 0.3s ease; /* Smooth hiding and showing */
-    overflow-y: hidden;
-}
-
-.navbar ul{
-    display: flex;
-    margin: 1em;
-    margin-left: 10em;
-}
-
-.navbar img{
-    margin-left: 1em;
-    width: 80px;
-    height: 80px;
-}
-
-.navbar ul li a:link, .navbar ul li a:visited{
-    margin: 0 0.5em;
-    color: #D6C075;
-    text-decoration: none;
-    list-style: none;
-}
-.navbar ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0.7em;
-    color: #D6C075;
-    background-color: #223363;
-    padding: 0.7em;
-    padding-right: 5em;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #D6C075;
-    border-radius: 8px;
-    list-style: none;
-    font-weight: 600;
-}
-
-.navbar ul li img{
-    display: flex;
-    padding-left: 0.5em;
-    padding-right: 3em;
-    width: 40px;
-    height: 40px;
-}
-
-/* Header */
 
 .header_disc div img{
     width: 300px;
@@ -967,18 +893,18 @@ h6{
     z-index: 1;
 }
 
-.disc_classement{
+.classement{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     margin-left: -10%;
 }
 
-.disc_classement table{
+.classement table{
     border-collapse: collapse;
 }
 
-.disc_classement table thead tr{
+.classement table thead tr{
     color:#D6C075;
     background-color: #1C2747;
     border-left: 2px solid black;
@@ -986,46 +912,46 @@ h6{
     border-right: 2px solid black;
 }
 
-.disc_classement table thead tr img{
+.classement table thead tr img{
     width: 30px;
     height: 30px;
 }
 
-.disc_classement table tbody tr:nth-child(2n){
+.classement table tbody tr:nth-child(2n){
     background-color: #9C6D83;
     border-left: 2px solid black;
     border-right: 2px solid black;
 }
-.disc_classement table tbody tr:nth-child(2n - 1){
+.classement table tbody tr:nth-child(2n - 1){
     background-color: #F2ABCB;
     border-left: 2px solid black;
     border-right: 2px solid black;
     padding: 1em 1em;
 }
-.disc_classement table tbody img{
+.classement table tbody img{
     width: 40px;
     height: 25px;
 }
-.disc_classement table tfoot img{
+.classement table tfoot img{
     width: 50px;
     height: 33px;
 }
 
-.disc_classement table tfoot tr{
+.classement table tfoot tr{
     background-color: #F2ABCB;
     border-left: 2px solid black;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
 }
 
-.disc_classement table tr td{
+.classement table tr td{
     text-align: center;
     width: 4%;
     height: 7%;
     padding: 0.5em 0;
 }
 
-.disc_classement table tr td:nth-child(2){
+.classement table tr td:nth-child(2){
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1047,7 +973,7 @@ h6{
 .catégorie_disc{
     display: flex;
     flex-direction: column;
-    text-justify: justify;
+    text-align: justify;
 }
 
 .catégorie_disc article{
@@ -1143,6 +1069,7 @@ h6{
 
 .medailles_disc article {
     margin: 4em 0;
+    
 }
 
 .medailles_disc article section img{
@@ -1165,6 +1092,7 @@ h6{
     height: 150px;
     width: 300px;
     color: white;
+
 }
 
 .medailles_disc article section div h3{
@@ -1176,6 +1104,7 @@ h6{
     align-items: center;
     gap: 10px;
     margin-top: -20px;
+    font-size: 20px;
 }
 
 .medailles_disc article section div img{
@@ -1211,6 +1140,7 @@ h6{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    background-color: #D9D9D9 ;
     margin-left: 200px;
     margin-top: -420px;
     width: fit-content;
@@ -1229,8 +1159,6 @@ h6{
     margin-right: -5em;
     
 }
-
-/* Comment jouer au tennis de table ? */
 
 .tuto_disc{
     display: flex;
@@ -1266,11 +1194,7 @@ h6{
     align-items: center;
     background-color: #C6A6CF;
     min-width: 50%;
-    max-width: 50%;
-    min-height: 20em; /* */
-}
-.images_tuto_disc figure img{
-    max-width: 100%;
+    min-height: 100%;
 }
     
 
@@ -1279,7 +1203,7 @@ h6{
     height: fit-content;
     max-width: 40%;
     padding: 1em;
-    
+    font-size: 24px;
 }
 
 .tuto_disc figure{
@@ -1315,12 +1239,8 @@ h6{
     margin-bottom: -10%;
 }
 
-
-/* Les chinois */
-
 .tableau_chinois_disc{
     background-color: black;
-    margin-bottom: -10%;
 }
 
 .tableau_chinois_disc aside{
@@ -1420,7 +1340,6 @@ h6{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
-    margin-bottom: 10%;
 }
 
 .tableau_chinois_disc tbody tr:nth-child(2n -1){
@@ -1460,6 +1379,8 @@ h6{
     flex-direction: row;
     align-items: center;
     gap: 100px;
+    font-size: 32px;
+
 }
 
 .tableau_chinois_disc table tr td:nth-child(2){
@@ -1502,39 +1423,6 @@ h6{
     -10px 10px 1px 1px rgba(175, 23, 31, 0.25);
 }
 
-/* Le footer */
-
-footer section {
-    padding: 40px;
-    justify-content: space-around;
-    border-top: 1px solid white;
-    display: flex;
-    align-items: center;
-    background-color: #000000;
-}
-footer img {
-    max-width: 80px;
-}
-footer a {
-    text-decoration: none;
-    color: rgb(207, 207, 207);
-}
-footer section:nth-child(1) a{
-    border: solid 3px #D6C075;
-    border-radius: 5px;
-    padding: 0.5em;
-}
-
-footer a:hover {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-footer section:nth-of-type(1) img {
-    width: 400px;
-}
-
-
-
 #rectangle_1{
     width:32%;
     height:2px;
@@ -1542,13 +1430,13 @@ footer section:nth-of-type(1) img {
 }
 
 #rectangle_2{
-    width:25%;
+    width:32%;
     height:2px;
     background:white;
 }
 
 #rectangle_3{
-    width:12%;
+    width:22%;
     height:2px;
     background:white;
 }
@@ -1610,7 +1498,9 @@ footer section:nth-of-type(1) img {
   .dropdown-content {
     display: none;
     flex-direction: column;
+    background-color: #f1f1f1;
     min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
@@ -1626,514 +1516,55 @@ footer section:nth-of-type(1) img {
   .show {display:flex;}
 
 
-@media (max-width: 1470px) {
-    .navbar img { 
-        margin-left: 0;
-    }
-    .navbar ul{
-        display: flex;
-        margin: 0.5m;
-    }
-    
-    .navbar img{
-        width: 40px;
-        height: 40px;
-    }
-
-    .navbar ul li img{
-        display: flex;
-        padding-left: 0.5em;
-        width: 30px;
-        height: 30px;
-    }
-}
-@media (max-width: 1380px) {
-    .navbar {
-        background-color: #223363;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-        overflow: hidden;
-    }
-}
-@media (max-width: 720px) {
-    .navbar ul li { 
-        width: unset;
-        padding-right: unset;
-        border: none;
-    }
-    .navbar a {
-        overflow:visible;
-        visibility: hidden;
-    }
-}
-@media (max-width: 450px) {
-    nav img[alt="Icone"] {
-        display: none;
-        visibility: hidden;
-    }
-    nav ul {
-        padding-left: 0;
-    }
-}
-
-
 @media screen and (max-width: 576px) {
-    .discipline p, .discipline ul{
-        font-size: 8px;
-    }
-    .discipline h1{
-        font-size: 40px;
-    }
-    .discipline h2{
-        font-size: 15px;
-    }
-    .discipline h3{
-        font-size: 12px;
-    }
-    .titre_1_disc, .titre_2_disc{
-        border-top: 5px solid #D6C075;
-        border-bottom: 5px solid #D6C075;
+    .discipline {
+        font-size: 14px;
+        padding: 10px;
     }
 
-    .header_disc div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 6em;
-    }
-    .header_disc div img{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin: 0em 3em;
+    .intro article {
+        width: 100%;
+        padding: 1em;
     }
 
-    footer section:nth-child(n+2) a{
-        font-size: 7px;
-    }
-    footer section:nth-child(n+2) img{
-        width: 20px;
-        height: 20px;
-    }
-    footer section:nth-child(1) a{
-        border: solid 3px #D6C075;
-        border-radius: 5px;
-        padding: 0.5em;
-        font-size: 10px;
-    }
-
-    .intro{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .intro article img{
-        width: 50px;
-        height: 50px;
-    }
-
-    .catégorie_disc img{
-        width: 140px;
+    .intro img {
+        width: 120px;
         height: 120px;
-        margin: 1em;
-    }
-    .catégorie_disc article{
-        margin: 0.5em 0;
-    }
-
-    .eiffel_disc{
-        width: 100px;
-        height: 100px;
-        margin-top: -75px;
-        margin-bottom: -75px;
-    }
-    .medailles_disc {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 200px;
-    }
-    .medailles_disc article section img{
-        width: 130px;
-        height: 100px;
-        margin-bottom: -2%;
-    }
-    .medailles_disc article section div{
-        height: 60px;
-        width: 130px;
-    }
-    .medailles_disc article section div img{
-        width: 12px;
-        height: 12px;
-    }
-    .medailles_disc article section h3 img{
-        width: 35px;
-        height: 15px;
-        padding-right: 5em;
-        margin-right: -4em;
-    }
-    .medailles_disc article {
-        margin: 1em 0;
-        
-    }
-    .pays_disc{
-        margin-top: -165px;
-        margin-left: 80px;
-        gap: 0px;
-        font-size: 10px;
-    }
-
-    .pong_disc{
-        display: block;
-        margin-right: auto;
-        position: relative;
-        width: 67px;
-        height: 50px;
-        margin-top: -20px;
-        margin-bottom: -20px;
-        transform: rotateY(180deg);
-    }
-    .tuto_disc button img{
-        margin-bottom: 3px;
-        width: 30px;
-        height: 30px;
-    }
-
-    .tableau_chinois_disc aside img{
-        width: 50%;
-        height: 50%;
-        margin: 0 -3em;
-    }
-    .tableau_chinois_disc aside{
-        margin-left: -0em;
-    }
-    .tableau_chinois_disc table tr{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0px;
-        font-size: 10px;
-    }
-    .tableau_chinois_disc table tbody img, .tableau_chinois_disc table thead img{
-        width: 30px;
-        height: 20px;
-    }
-    .tableau_chinois_disc div article section{
-        height: 15vh;
-    }
-
-    footer img{
-        max-width: 60px;
-    }
-
-    .disc_classement{
-        margin-left: -100px;
-        margin-top: 5em;
-    }
-    #chill_mascotte{
-        width: 200px;
-        height: 120px;
-        margin-right: -100px;
-        margin-top: -73px;
-    }
-
-    #rectangle_4{
-        width: 12%;
-    }
-    #rectangle_5{
-        width: 20%;
     }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-    .discipline p, .discipline ul{
-        font-size: 13px;
-    }
-    .discipline h1{
-        font-size: 64px;
-    }
-    .discipline h2{
-        font-size: 20px;
-    }
-    .discipline h3{
-        font-size: 18px;
-    }
-    .titre_1_disc, .titre_2_disc{
-        border-top: 5px solid #D6C075;
-        border-bottom: 5px solid #D6C075;
+    .discipline {
+        font-size: 16px;
+        padding: 20px;
     }
 
-    .header_disc div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 6em;
-    }
-    .header_disc div img{
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin: 0em 3em;
-    }
-
-    footer section:nth-child(n+2) a{
-        font-size: 7px;
-    }
-    footer section:nth-child(n+2) img{
-        width: 40px;
-        height: 40px;
-    }
-
-    .intro{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .catégorie_disc img{
-        width: 300px;
-        height: 220px;
-        margin: 2em;
-    }
-    .catégorie_disc article{
-        margin: 0.5em 0;
-    }
-
-    .eiffel_disc{
-        width: 200px;
-        height: 200px;
-        margin-top: -100px;
-        margin-bottom: -100px;
-    }
-    .medailles_disc {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 200px;
-    }
-    .medailles_disc article section img{
-        width: 170px;
-        height: 135px;
-        margin-bottom: -2%;
-    }
-    .medailles_disc article section div{
-        height: 95px;
-        width: 170px;
-    }
-    .medailles_disc article section div img{
-        width: 20px;
-        height: 20px;
-    }
-    .medailles_disc article section h3 img{
-        width: 40px;
-        height: 20px;
-        padding-right: 5em;
-        margin-right: -4em;
-    }
-    .medailles_disc article {
-        margin: 1em 0;
-        
-    }
-    .pays_disc{
-        margin-top: -240px;
-        margin-left: 120px;
-        gap: 0px;
-        font-size: 15px;
-    }
-
-    .pong_disc{
-        display: block;
-        margin-right: auto;
-        position: relative;
-        width: 115px;
-        height: 100px;
-        margin-top: -35px;
-        margin-bottom: -35px;
-        transform: rotateY(180deg);
-    }
-    .tuto_disc button img{
-        margin-bottom: 3px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .tableau_chinois_disc aside img{
-        width: 50%;
-        height: 50%;
-        margin: 0 -4em;
-    }
-    .tableau_chinois_disc aside{
-        margin-left: -0em;
-    }
-    .tableau_chinois_disc table tr{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-    }
-    .tableau_chinois_disc div article section{
-        height: 30vh;
-    }
-
-    .disc_classement{
-        margin-left: -200px;
-        margin-top: 5em;
-    }
-    #rectangle_4{
-        width: 20%;
-    }
-    #rectangle_5{
-        width: 12%;
+    .intro article {
+        width: 90%;
+        padding: 2em;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .discipline p{
-        font-size: 16px;
-    }
-    .discipline h1{
-        font-size: 80px;
+        font-size: 20px;
     }
     .discipline h2{
-        font-size: 30px;
+        font-size: 48px;
     }
-    .discipline h3{
-        font-size: 24px;
-    }
-
-    .header_disc div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 6em;
-    }
-    .header_disc div img{
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin: 0em 3em;
-    }
-
-    footer section:nth-child(n+2) a{
-        font-size: 10px;
-    }
-    footer section:nth-child(n+2) img{
-        width: 60px;
-        height: 60px;
-    }
-
     .intro{
         justify-content: center;
         flex-wrap: wrap;
     }
-
-    .catégorie_disc img{
-        width: 300px;
-        height: 220px;
-        margin: 2em;
-    }
-    .catégorie_disc article{
-        margin: 0.5em 0;
-    }
-
-    .eiffel_disc{
-        width: 200px;
-        height: 200px;
-        margin-top: -100px;
-        margin-bottom: -100px;
-    }
-    .medailles_disc {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 200px;
-    }
-    .medailles_disc article section img{
-        width: 200px;
-        height: 150px;
-        margin-bottom: -2%;
-    }
-    .medailles_disc article section div{
-        height: 120px;
-        width: 200px;
-    }
-    .medailles_disc article section div img{
-        width: 25px;
-        height: 25px;
-    }
-    .medailles_disc article section h3 img{
-        width: 60px;
-        height: 30px;
-        padding-right: 5em;
-        margin-right: -4em;
-    }
-    .medailles_disc article {
-        margin: 1em 0;
-        
-    }
-    .pays_disc{
-        margin-top: -280px;
-        margin-left: 120px;
-        gap: 0px;
-    }
-
-    .pong_disc{
-        display: block;
-        margin-right: auto;
-        position: relative;
-        width: 115px;
-        height: 100px;
-        margin-top: -35px;
-        margin-bottom: -35px;
-        transform: rotateY(180deg);
-    }
-    .tuto_disc button img{
-        margin-bottom: 3px;
-        width: 60px;
-        height: 60px;
-    }
-
-    .tableau_chinois_disc aside img{
-        width: 50%;
-        height: 50%;
-        margin: 0 -7em;
-    }
-    .tableau_chinois_disc aside{
-        margin-left: -8em;
-    }
-    .tableau_chinois_disc table tr{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0px;
-        font-size: 16px;
-    }
-    .tableau_chinois_disc div article section{
-        height: 30vh;
-    }
-
-    .disc_classement{
+    .classement{
         margin-left: -200px;
         margin-top: 5em;
-    }
-    #rectangle_4{
-        width: 20%;
-    }
-    #rectangle_5{
-        width: 12%;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .discipline p{
-        font-size: 24px;
+        font-size: 30px;
     }
     .discipline h2{
         font-size: 50px;
@@ -2145,14 +1576,8 @@ footer section:nth-of-type(1) img {
         justify-content: flex-end;
         flex-wrap: nowrap;
     }
-    .disc_classement{
+    .classement{
         flex-wrap: nowrap;
-    }
-    .images_tuto_disc{
-        min-height: 20em;
-    }
-    .tableau_chinois_disc table tr td{
-        font-size: 24px;
     }
 }
 
@@ -2919,5 +2344,8 @@ footer section:nth-of-type(1) img {
         width: 80px;
         height: 80px;
     }
+}
+.epreuves th {
+    color: black;
 }
 /* YANN fin page épreuves *
