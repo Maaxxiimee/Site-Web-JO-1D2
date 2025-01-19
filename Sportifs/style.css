@@ -1,0 +1,230 @@
+body{
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 0;
+}
+
+header nav{
+    background-color: #223363;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    margin: 1em;
+    margin-left: 10em;
+}
+
+header nav img{
+    margin-left: 1em;
+    width: 80px;
+    height: 80px;
+}
+
+header nav ul li a:link, header nav ul li a:visited{
+    margin: 0 0.5em;
+    color: #D6C075;
+    text-decoration: none;
+    list-style: none;
+}
+header nav ul li{
+    width: 18vm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.7em;
+    color: #D6C075;
+    background-color: #223363;
+    padding: 0.7em;
+    padding-right: 5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D6C075;
+    border-radius: 8px;
+    list-style: none;
+}
+
+header nav ul li img{
+    display: flex;
+    padding-left: 0.5em;
+    padding-right: 3em;
+    width: 40px;
+    height: 40px;
+}
+
+header div img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0em 3em;
+}
+
+header div{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1C2747;
+    align-items: center;
+    padding: 1em 1em;
+    justify-content: flex-start;
+    border-bottom: 10px solid #D6C075;
+    
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    color: #D6C075;
+    font-weight: bold;
+    font-size: 128px;
+}
+h2{
+    font-size: 64px;
+}
+p{
+    font-size: 32px;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.intro article{
+    background-color: #C6A6CF;
+    border-radius: 40px;
+    width: 62%;
+    padding: 1em;
+    box-shadow: -20px 20px 20px rgba(0,0,0,.25);
+}
+
+.intro article div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro article div h2{
+    background-color: rgb(47, 127, 238);
+    padding: 0.2em 3vw;
+    border-radius: 40px;
+}
+
+.intro article img{
+    background-color: white;
+    border-radius: 50%;
+    width : 156px;
+    height: 156px;
+}
+
+
+#chill_mascotte{
+    width: 400px;
+    height: 240px;
+    margin-right: -200px;
+    margin-top: -146px;
+    z-index: 1;
+}
+
+.classement{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -500px;
+}
+
+.classement table{
+    border-collapse: collapse;
+}
+
+.classement table thead tr{
+    color:#D6C075;
+    background-color: #1C2747;
+    width: 4vw;
+    height: 7vh;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.classement table thead tr img{
+    width: 40px;
+    height: 40px;
+}
+
+.classement table tbody tr:nth-child(2n){
+    background-color: #9C6D83;
+    border-left: 2px solid black;
+}
+.classement table tbody tr:nth-child(2n - 1){
+    background-color: #F2ABCB;
+    border-left: 2px solid black;
+}
+.classement table tbody img{
+    width: 50px;
+    height: 33px;
+}
+.classement table tfoot img{
+    width: 50px;
+    height: 33px;
+}
+
+.classement table tfoot tr{
+    background-color: #F2ABCB;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.classement table tr td{
+    text-align: center;
+    width: 4vw;
+    height: 7vh;
+    font-weight: bold;
+}
+.classement table tr td:nth-child(2){
+    display: flex;
+    align-items: center;
+    width: 9vw;
+    gap: 10px;
+}
+
+.titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#F2ABCB;
+    background-color:#1C2747;
+    border-top: 15px solid #D6C075;
+    border-bottom: 15px solid #D6C075;
+}
+#rectangle{
+    width:35%;
+    height:2px;
+    background:white;
+}
+
+
+
+
+#page_active{
+    background-color: #D6C075;
+}
+
+#page_active a{
+    color: #223363;
+}
