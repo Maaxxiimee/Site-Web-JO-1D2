@@ -118,7 +118,7 @@
     justify-content: center;
     margin-top: 30px;
 }
-.acceuil main section h1, h1{
+.acceuil h1{
     color: black;
     margin: 40px;
     padding: 10px;
@@ -127,11 +127,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 2.5em;
-}
-
-.discipline h1{
-    font-family: 'Montserrat';
-    font-weight: 900;
 }
 
 
@@ -3176,7 +3171,10 @@ footer section:nth-of-type(1) img {
         padding: 20px;
     }
 
-
+    .intro article {
+        width: 90%;
+        padding: 2em;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -3186,7 +3184,14 @@ footer section:nth-of-type(1) img {
     .mainfel h2{
         font-size: 48px;
     }
-
+    .intro{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .classement{
+        margin-left: -200px;
+        margin-top: 5em;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -3199,7 +3204,13 @@ footer section:nth-of-type(1) img {
     .mainfel h3{
         font-size: 30px;
     }
-
+    .intro{
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    .classement{
+        flex-wrap: nowrap;
+    }
 } 
 
 @media screen and (max-width: 576px) {
@@ -3233,4 +3244,4 @@ footer section:nth-of-type(1) img {
 
 }
 
-/* Pierr-Louis fin page sportif */
+/* Pierre-Louis fin page sportif */
